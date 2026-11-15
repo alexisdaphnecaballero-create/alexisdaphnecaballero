@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Watamanga</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Wata<span>manga</span></h1>
+  <div class="bar">
+    <input id="search" type="search" placeholder="Search title or author" aria-label="Search manga">
+    <select id="genre" aria-label="Filter by genre"><option value="">All genres</option></select>
+    <button class="solid" id="openCart">Cart (<span id="count">0</span>)</button>
+  </div>
+</header>
+
+<main>
+  <div id="grid"></div>
+  <section class="others" id="others">
+    <h2>Can’t find it here?</h2>
+    <p id="otherNote"></p>
+    <div class="stores" id="stores"></div>
+  </section>
+</main>
+
+<aside id="cart" aria-label="Cart and checkout">
+  <div class="head"><h2 id="title">Your cart</h2><button class="x" id="close" aria-label="Close">✕</button></div>
+  <div class="scroll" id="body"></div>
+  <div id="foot"></div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
